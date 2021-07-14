@@ -11,6 +11,12 @@ input, button, textarea, select { font: inherit }
 
 /* ================= ENDS ================ */
 
+body { 
+    background-color: #f8f5f3;
+    border-top: solid 20px #338cb6;   
+    border-bottom: solid 20px #338cb6;
+}
+
 /* Desktops */
 @media (min-width: 768px) { body { padding: 4% 20% } }
 	
