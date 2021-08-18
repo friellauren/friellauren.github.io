@@ -85,6 +85,7 @@ a:hover, a:focus, a:active {
     border-bottom: solid 2px blue;
 }
 
+/* VIDEO RESPONSIVE LAYOUT */
 .video-container {
     overflow: hidden;
     position: relative;
