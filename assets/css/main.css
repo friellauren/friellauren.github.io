@@ -23,7 +23,7 @@
 }
 
 .container-hero-block.contact-page {
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-contact-background.jpg')
+	background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)), url('../img/contactimage.jpg')
 }
 
 .container-hero-block h1 {
