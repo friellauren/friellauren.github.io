@@ -11,37 +11,40 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+    /* .container-btn { justify-content: center } */
 }
 
 .container-hero-block.home-page {
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-home-background.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0)), url('../img/webhome.jpg');
 }
 
 .container-hero-block.portfolio-page {
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-portfolio-background.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.92),rgba(0,0,0,0)), url('../img/portfoliopage.jpg');
 }
 
 .container-hero-block.contact-page {
 	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-contact-background.jpg')
 }
 
-.container-hero-block h1, .container-hero-block h2 {
+.container-hero-block h1 {
 	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
-	text-shadow: 2px 2px #222;
+	font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px rgb(0, 0, 0);
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.container-hero-block h1 { 
 	color: #fff;
-	font-size: calc(42px + (102 - 42) * ((100vw - 320px)/(1600 - 320)))
+	font-size: calc(42px + (102 - 56) * ((100vw - 320px)/(1600 - 320)))
 }
 
 .container-hero-block h2 {
-	color:  #4799eb;
+    font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+    text-shadow: 3px 3px rgb(0, 0, 0);
+    margin-left: auto;
+	margin-right: auto;
+    color:  #a6c8fa;
 	line-height: 1.5;
-	font-size: calc(32px + (64 - 32) * ((100vw - 320px)/(1600 - 320)));
+	font-size: calc(32px + (60 - 34) * ((100vw - 320px)/(1600 - 320)));
 }
 
 /* Desktop - block height, text width and h1 bottom margin */
@@ -104,34 +107,44 @@
 
 /* ============== FAUX BUTTONS =================== */
 
-a.button:link, a.button:visited, a.button:hover, a.button:active { 
+a.btn:link, a.btn:visited, a.btn:hover, a.btn:active { 
     text-decoration: none;
     color: #fff;
     border: none;
-    padding: 14px 30px;
+    padding: 20px 40px;
     display: inline-block;
     line-height: 1;
     font-weight: bold;
     letter-spacing: 1px;
 }
  
-a.button-solid:link, .button-solid:visited {
-    background-color: #ff6501;
+/* Gradient buttons */
+.btn-gradient:link, .btn-gradient:visited {
+
+    background-image: linear-gradient(to right,#000,#0f2396, #b8cff1);
     color: #fff;
-} 
+ } 
  
-a.button-solid:hover, .button-solid:active {
-    background-color: #0c1d37;
-   color: #fff 
-}
+ .btn-gradient:focus, .btn-gradient:hover, .btn-gradient:active  {
+    background-image: linear-gradient(to right,#82adee,#0f2396, #000);
+    color: #fff;
+ } 
+
+ /* Button corner styles */
+.btn-soft    { border-radius: 5px }
+.btn-rounded { border-radius: 50px }
  
-a.button-round { border-radius: 50px }
 a.button-soft { border-radius: 5px }
+a.button-round { border-radius: 50px }
 
 /* Hide button icons on narrow desktop sceens */
 @media all and (min-width:768px) and (max-width: 1024px) {
    .container-flexbox .item-3 a.button i { display: none}
+ 
 }
+
+/* Buttons with Font Awesome icons */
+.btn i { margin-right: 10px !important }
 
 /* ============== FANCY HYPERLINKS =================== */
 
@@ -145,13 +158,13 @@ a.fancy-link:hover, a.fancy-link:active {
 }
 
 a.fancy-link:link, a.fancy-link:visited { 
-    color: #222; 
-    border-bottom-color:#ff6501
+    color: #07287a;
+    border-bottom-color:#000
 }
 
 a.fancy-link:hover, a.fancy-link:active { 
-    color: #222; 
-    border-bottom-color: #222
+    color: #db0b15;
+    border-bottom-color: #db0b15
 }
 
 .text-accent {
@@ -159,8 +172,9 @@ a.fancy-link:hover, a.fancy-link:active {
     padding-right: 0.25em;
     padding-left: 0.25em;
     border-radius: 8px;
-    background-color: rgba(255, 101, 1, 0.12);
-    color: #ff6501;
+    background-color: #010511(255, 101, 1, 0.12);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: #a6c8fa;
 }
 
 
@@ -296,7 +310,7 @@ img.image-circle {
 
 /* Drop shadow effect around images  */
 img.image-shadow { 
-    box-shadow: 8px 10px 8px #888;
+    box-shadow: 8px 10px 8px rgb(47, 86, 112);
     margin-bottom: 20px
 }
 
@@ -307,7 +321,7 @@ img.image-shadow {
 /* All screens */
 .container-contact-form { 
 	text-align: center; 
-	background-color: #fde6d6 
+	background-color: #d4e3fa
 }
 
 /* Desktop */
@@ -331,7 +345,7 @@ img.image-shadow {
 /* Heading */
 .container-contact-form h3 { 
 	font-weight: bold; 
-	color: #0c2461;
+	color: #000;
 	line-height: 1.2;
 	margin-bottom: 3%;
 	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
@@ -392,8 +406,8 @@ img.image-shadow {
 
 #contact-form input, #contact-form textarea {
 	padding: 10px 12px;
-	border: 2px solid #0c2461;
-	background-color: #f0f0f0;
+	border: 2px solid #000;
+	background-color: #fff;
 	border-radius: 5px;
 }
 
@@ -407,7 +421,7 @@ img.image-shadow {
 #contact-form #btn-submit { 
 	float: right; 
 	border: none; 
-    background-color: #0c2461;
+    background-color: #000;
     color: #fff;
 	font-weight: bold;
     padding: 18px 28px;
@@ -417,8 +431,8 @@ img.image-shadow {
 
 #contact-form #btn-submit:hover, 
 #contact-form #btn-submit:active { 
-    background-color: #403d50;
-    color: #fff
+    background-color: #000;
+    color: rgb(184, 180, 180)
 }
 
 #contact-form #btn-submit i.fas {

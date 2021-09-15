@@ -18,7 +18,7 @@ header *:last-child, section *:last-child, footer *:last-child { margin-bottom: 
 
 body {
     font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background-color:#fdf8f4;
-    color: #0c1d37;
+    background-color:hsl(209, 66%, 92%);
+    color: #000000;
 }
 

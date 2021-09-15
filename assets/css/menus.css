@@ -107,7 +107,6 @@
 /* cta button padding */
 .container-menu-desktop ul li a.btn-cta { padding: 5px 20px 7px 20px }
 
-
 /* ======= MOBILE MENU  ======== */
 
 /* outer flexbox container for mobile menu bar 
@@ -240,7 +239,7 @@
 
 /* background colour */
 .menu-light { 
-	background-color: #ff6501;
+	background-color: rgb(0, 0, 0);
 	transition: all .5s ease-in-out;
 }
 
@@ -251,7 +250,7 @@
 
 /* menu links */
 .menu-light ul li a:link,  .menu-light ul li a:visited { color: #fff }
-.menu-light ul li a:hover, .menu-light ul li a:active  { color: #0f2456 }
+.menu-light ul li a:hover, .menu-light ul li a:active  { color: #888 }
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
@@ -263,9 +262,9 @@
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: #0f2456;
-    color: #fff;
-    border-color:#0f2456
+    background-color: #fff;
+    color: #000;
+    border-color:#000
 }
 
 /* on mobiles only */
@@ -319,7 +318,7 @@ a[href^=tel] { text-decoration: none; color:#0f2456 }
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
 .menu-transparent ul li a.btn-cta:visited { 
-    background-color: transparent;
+    background-color: rgb(0, 0, 0);
     color: #fff;
     border-color:#fff;
 }
@@ -327,8 +326,8 @@ a[href^=tel] { text-decoration: none; color:#0f2456 }
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: #0f2456;
-    border-color:#0f2456
+    color: #000;
+    border-color:#000
 }
 
 /* on mobiles only - various content */

@@ -325,7 +325,7 @@
 /* ================ UTILITY CLASSES ============= */
 
 header .text-center { text-align: center }
-header .text-shadow { text-shadow: 2px 2px #222; }
+header .text-shadow { text-shadow: 2px 2px rgb(0, 0, 0); }
 
 
 
@@ -333,12 +333,11 @@ header .text-shadow { text-shadow: 2px 2px #222; }
 
 .hero-block { background-color: #3098f3 }
 
-.hero-block h1, .hero-block h2 { color:#fff }
+.hero-block h1, .hero-block h2 { color: #fff}
 
 
 /* Button container */
 .container-btn { display: flex }
-
 
 /* All buttons */
 .container-btn .btn {
@@ -353,11 +352,11 @@ header .text-shadow { text-shadow: 2px 2px #222; }
 
 /* Solid buttons */
 .container-btn .btn-solid:any-link {
-    background-color: #ff6501; border-color: #ff6501; color: #fff;
+    background-color: #ff6501; border-color: #ff6501; color: #fff; 
 }
 
 .container-btn :is(.btn-solid:focus, .btn-solid:hover,.btn-solid:active) {
-    background-color: #222; border-color: #222; color: #fff;
+    background-color: #222(129, 29, 29); border-color: #222; color: #fff;
 }
 
 
@@ -381,5 +380,3 @@ header .text-shadow { text-shadow: 2px 2px #222; }
 
 /* Buttons: Font Awesome icons */
 .container-btn .btn i { margin-right: 10px; }
-
-
