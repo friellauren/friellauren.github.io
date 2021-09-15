@@ -23,7 +23,7 @@
 }
 
 .container-hero-block.contact-page {
-	background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)), url('../img/contactimage.jpg')
+	background-image: linear-gradient(rgba(0,0,0,0.92),rgba(0,0,0,0)), url('../img/contactimage.jpg')
 }
 
 .container-hero-block h1 {
@@ -345,6 +345,7 @@ img.image-shadow {
 /* Heading */
 .container-contact-form h3 { 
 	font-weight: bold; 
+    font-family: 'Bodoni Moda', serif;
 	color: #000;
 	line-height: 1.2;
 	margin-bottom: 3%;
@@ -353,7 +354,8 @@ img.image-shadow {
 
 /* Text */
 .container-contact-form p { 
-    font-weight: normal;
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
     color: #000; 
 	line-height: 1.5;
 	margin-bottom: 7%;
